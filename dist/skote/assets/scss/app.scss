@@ -1,0 +1,287 @@
+/*
+Template Name: Skote - Responsive Bootstrap 4 Admin Dashboard
+Author: Themesbrand
+Version: 1.0.0
+Website: https://themesbrand.com/
+Contact: themesbrand@gmail.com
+File: Main Css File
+*/
+
+//Fonts
+@import 'custom/fonts/fonts';
+
+//Core files
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+@import 'variables';
+@import './node_modules/bootstrap/scss/mixins.scss';
+
+// Structure
+@import 'custom/structure/general';
+@import 'custom/structure/topbar';
+@import 'custom/structure/page-head';
+@import 'custom/structure/footer';
+@import 'custom/structure/right-sidebar';
+@import 'custom/structure/vertical';
+@import 'custom/structure/horizontal-nav';
+@import 'custom/structure/layouts';
+
+// Plugins
+@import 'custom/plugins/custom-scrollbar';
+@import 'custom/plugins/calendar';
+@import 'custom/plugins/dragula';
+@import 'custom/plugins/range-slider';
+@import 'custom/plugins/sweatalert2';
+@import 'custom/plugins/rating';
+@import 'custom/plugins/parsley';
+@import 'custom/plugins/select2';
+@import 'custom/plugins/switch';
+@import 'custom/plugins/datepicker';
+@import 'custom/plugins/form-editors';
+@import 'custom/plugins/form-upload';
+@import 'custom/plugins/form-wizard';
+@import 'custom/plugins/responsive-table';
+@import 'custom/plugins/chartist';
+@import 'custom/plugins/apexcharts';
+@import 'custom/plugins/google-map';
+@import 'custom/plugins/owl-carousel';
+
+// Pages
+@import 'custom/pages/authentication';
+@import 'custom/pages/ecommerce';
+@import 'custom/pages/email';
+@import 'custom/pages/projects';
+@import 'custom/pages/contacts';
+@import 'custom/pages/coming-soon';
+@import 'custom/pages/timeline';
+@import 'custom/pages/extras-pages';
+@import 'custom/pages/chat';
+@import 'custom/pages/crypto';
+@import 'custom/pages/custom';
+
+// custom scss
+//  form wizard
+aw-wizard {
+  .steps-indicator {
+    .label {
+      color: $text-muted !important;
+    }
+
+    .current {
+      .step-indicator {
+        color: $primary !important;
+        border-color: $primary !important;
+      }
+    }
+  }
+}
+
+/*reset*/
+
+*,
+html,
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+}
+
+/* You can add global styles to this file, and also import other style files */
+/*reset*/
+html,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+em,
+img,
+ins,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+audio,
+video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+main,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  box-sizing: border-box;
+  display: block;
+}
+ul,
+li,
+dl,
+dd,
+dt {
+  box-sizing: border-box;
+  list-style: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+}
+input,
+select {
+  vertical-align: middle;
+}
+small {
+  font-size: 80%;
+}
+img {
+  border-style: none;
+}
+address {
+  font-style: normal;
+}
+button,
+input,
+textarea,
+select,
+a {
+  border: 0;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+}
+
+/** Correct the inability to style clickable types in iOS and Safari. */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+/** * Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/** * Restore the focus styles unset by the previous rule. */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/** * 1. Add the correct box sizing in IE 10. * 2. Remove the padding in IE 10. */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/** * Correct the cursor style of increment and decrement buttons in Chrome. */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+/** * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/** * Remove the inner padding in Chrome and Safari on macOS. */
+
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/** * 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+button {
+  cursor: pointer;
+}
+
+/*reset */

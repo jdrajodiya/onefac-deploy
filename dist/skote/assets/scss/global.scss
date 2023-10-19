@@ -1,0 +1,23 @@
+.wrapper-detector-information-graph,
+.wrapper-drawing-management,
+.wrapper-detector-history-information {
+  .table {
+    margin-bottom: 0;
+  }
+
+  .right-list {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date-piker-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    .filter-name {
+      font-weight: bold;
+      font-size: x-large;
+    }
+  }
+}
