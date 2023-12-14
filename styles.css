@@ -741,6 +741,20 @@ input[type=search i] {
 .black-outline-btn:hover {
   background: rgba(0, 0, 0, 0.06);
 }
+.red-button {
+  width: 46px;
+  height: 24px;
+  border-radius: 5px;
+  color: #fff;
+  background: #eb0404;
+  border: 1px solid #96a1b5;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-family: "nanum";
+}
+.red-button[disabled] {
+  cursor: not-allowed;
+}
 .gray {
   width: 46px;
   height: 24px;
