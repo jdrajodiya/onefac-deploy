@@ -1396,6 +1396,20 @@ mbsc-calendar .mbsc-calendar-day-outer {
 ::-webkit-scrollbar {
   display: none !important;
 }
+.error-msg {
+  font-size: 18px !important;
+  color: red;
+  margin-left: 9rem;
+}
+.error-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10.0625rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
 @charset "UTF-8";
 /*
 Template Name: Skote - Responsive Bootstrap 4 Admin Dashboard
